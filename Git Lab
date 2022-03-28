@@ -1,0 +1,476 @@
+Clara@Clara MINGW64 ~/IH-Labs/lab-bash (master)
+$ cd ..
+
+Clara@Clara MINGW64 ~/IH-Labs
+$ git clone https://github.com/ClaraQuer/lab-git.git
+Cloning into 'lab-git'...
+remote: Enumerating objects: 14, done.
+remote: Counting objects: 100% (14/14), done.
+remote: Compressing objects: 100% (10/10), done.
+remote: Total 14 (delta 2), reused 12 (delta 1), pack-reused 0
+Receiving objects: 100% (14/14), done.
+Resolving deltas: 100% (2/2), done.
+
+Clara@Clara MINGW64 ~/IH-Labs
+$ ls
+lab-bash/  lab-git/
+
+Clara@Clara MINGW64 ~/IH-Labs
+$ cd lab-git/
+
+Clara@Clara MINGW64 ~/IH-Labs/lab-git (master)
+$ ^[[200~echo "# IronClara" >> README.md
+git add README.md
+bash: $'\E[200~echo': command not found
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/ClaraQuer/IronClara.git
+git push -u origin main
+Clara@Clara MINGW64 ~/IH-Labs/lab-git (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/herat/IH-Labs/lab-git/.git/
+
+Clara@Clara MINGW64 ~/IH-Labs/lab-git (master)
+$ git add README.md
+
+Clara@Clara MINGW64 ~/IH-Labs/lab-git (master)
+$ git commit -m "first commit"
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+Clara@Clara MINGW64 ~/IH-Labs/lab-git (master)
+$ git branch -M main
+
+Clara@Clara MINGW64 ~/IH-Labs/lab-git (main)
+$ git remote add origin https://github.com/ClaraQuer/IronClara.git
+error: remote origin already exists.
+
+Clara@Clara MINGW64 ~/IH-Labs/lab-git (main)
+$ git push -u origin main
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'main' on GitHub by visiting:
+remote:      https://github.com/ClaraQuer/lab-git/pull/new/main
+remote:
+To https://github.com/ClaraQuer/lab-git.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+Clara@Clara MINGW64 ~/IH-Labs/lab-git (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Clara@Clara MINGW64 ~/IH-Labs/lab-git (main)
+$ ls
+readme.md
+
+Clara@Clara MINGW64 ~/IH-Labs/lab-git (main)
+$ echo "# IronClara" >> README.md
+
+Clara@Clara MINGW64 ~/IH-Labs/lab-git (main)
+$ ls
+readme.md
+
+Clara@Clara MINGW64 ~/IH-Labs/lab-git (main)
+$ head readme.md
+![logo_ironhack_blue 7](https://user-images.githubusercontent.com/23629340/40541063-a07a0a8a-601a-11e8-91b5-2f13e4e6b441.png)
+
+# Lab | Git
+
+## Introduction
+
+Being able to use both, git and GitHub, is an important skill every software/data engineer must possess. This is even more important when it comes to the ability to handle codes in collaborative projects. This lab will help you learn how to use git/GitHub and understand its importance.
+
+## Instructions
+
+
+Clara@Clara MINGW64 ~/IH-Labs/lab-git (main)
+$ cd ..
+
+Clara@Clara MINGW64 ~/IH-Labs
+$ git clone https://github.com/ClaraQuer/IronClara.git
+Cloning into 'IronClara'...
+warning: You appear to have cloned an empty repository.
+
+Clara@Clara MINGW64 ~/IH-Labs
+$ echo "# IronClara" >> README.md
+
+Clara@Clara MINGW64 ~/IH-Labs
+$ ls
+IronClara/  README.md  lab-bash/  lab-git/
+
+Clara@Clara MINGW64 ~/IH-Labs
+$ cd IronClara
+
+Clara@Clara MINGW64 ~/IH-Labs/IronClara (main)
+$ ls
+
+Clara@Clara MINGW64 ~/IH-Labs/IronClara (main)
+$ echo "# IronClara" >> README.md~
+
+Clara@Clara MINGW64 ~/IH-Labs/IronClara (main)
+$ echo "# IronClara" >> README.md~
+
+Clara@Clara MINGW64 ~/IH-Labs/IronClara (main)
+$ git init
+Reinitialized existing Git repository in C:/Users/herat/IH-Labs/IronClara/.git/
+
+Clara@Clara MINGW64 ~/IH-Labs/IronClara (main)
+$ git add README.md
+fatal: pathspec 'README.md' did not match any files
+
+Clara@Clara MINGW64 ~/IH-Labs/IronClara (main)
+$ git commit -m "first commit
+> ^C
+
+Clara@Clara MINGW64 ~/IH-Labs/IronClara (main)
+$ cd ..
+
+Clara@Clara MINGW64 ~/IH-Labs
+$ ls
+IronClara/  README.md  lab-bash/  lab-git/
+
+Clara@Clara MINGW64 ~/IH-Labs
+$ rm README.md
+
+Clara@Clara MINGW64 ~/IH-Labs
+$ ls
+IronClara/  lab-bash/  lab-git/
+
+Clara@Clara MINGW64 ~/IH-Labs
+$ cd IronClara
+
+Clara@Clara MINGW64 ~/IH-Labs/IronClara (main)
+$ ls
+README.md~
+
+Clara@Clara MINGW64 ~/IH-Labs/IronClara (main)
+$ head README.md
+head: cannot open 'README.md' for reading: No such file or directory
+
+Clara@Clara MINGW64 ~/IH-Labs/IronClara (main)
+$ vim README.md
+
+Clara@Clara MINGW64 ~/IH-Labs/IronClara (main)
+$ cd ..
+
+Clara@Clara MINGW64 ~/IH-Labs
+$ rmdir IronClara
+rmdir: failed to remove 'IronClara': Directory not empty
+
+Clara@Clara MINGW64 ~/IH-Labs
+$ cd IronClara
+
+Clara@Clara MINGW64 ~/IH-Labs/IronClara (main)
+$ ls
+README.md~
+
+Clara@Clara MINGW64 ~/IH-Labs/IronClara (main)
+$ rm README.md~
+
+Clara@Clara MINGW64 ~/IH-Labs/IronClara (main)
+$ cd ..
+
+Clara@Clara MINGW64 ~/IH-Labs
+$ rmdir IronClara
+rmdir: failed to remove 'IronClara': Directory not empty
+
+Clara@Clara MINGW64 ~/IH-Labs
+$ cd IronClara
+
+Clara@Clara MINGW64 ~/IH-Labs/IronClara (main)
+$ ls
+
+Clara@Clara MINGW64 ~/IH-Labs/IronClara (main)
+$ ls -a
+./  ../  .git/
+
+Clara@Clara MINGW64 ~/IH-Labs/IronClara (main)
+$ touch README.md
+
+Clara@Clara MINGW64 ~/IH-Labs/IronClara (main)
+$ ls
+README.md
+
+Clara@Clara MINGW64 ~/IH-Labs/IronClara (main)
+$ echo "# IronClara" >> README.md
+
+Clara@Clara MINGW64 ~/IH-Labs/IronClara (main)
+$ head README.md
+# IronClara
+
+Clara@Clara MINGW64 ~/IH-Labs/IronClara (main)
+$ git init
+Reinitialized existing Git repository in C:/Users/herat/IH-Labs/IronClara/.git/
+
+Clara@Clara MINGW64 ~/IH-Labs/IronClara (main)
+$ git add README.md
+warning: LF will be replaced by CRLF in README.md.
+The file will have its original line endings in your working directory
+
+Clara@Clara MINGW64 ~/IH-Labs/IronClara (main)
+$ git commit -m "first commit"
+[main (root-commit) 17eef89] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+Clara@Clara MINGW64 ~/IH-Labs/IronClara (main)
+$ git branch -M main
+
+Clara@Clara MINGW64 ~/IH-Labs/IronClara (main)
+$ git remote add origin https://github.com/ClaraQuer/IronClara.git
+error: remote origin already exists.
+
+Clara@Clara MINGW64 ~/IH-Labs/IronClara (main)
+$ git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 227 bytes | 227.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/ClaraQuer/IronClara.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+Clara@Clara MINGW64 ~/IH-Labs/IronClara (main)
+$ ls
+README.md
+
+Clara@Clara MINGW64 ~/IH-Labs/IronClara (main)
+$ head README.md
+# IronClara
+
+Clara@Clara MINGW64 ~/IH-Labs/IronClara (main)
+$ git add .
+
+Clara@Clara MINGW64 ~/IH-Labs/IronClara (main)
+$ git commit
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Clara@Clara MINGW64 ~/IH-Labs/IronClara (main)
+$ git commit -m "test"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Clara@Clara MINGW64 ~/IH-Labs/IronClara (main)
+$ git push
+Everything up-to-date
+
+Clara@Clara MINGW64 ~/IH-Labs/IronClara (main)
+$ ls
+README.md
+
+Clara@Clara MINGW64 ~/IH-Labs/IronClara (main)
+$ touch about.txt
+
+Clara@Clara MINGW64 ~/IH-Labs/IronClara (main)
+$ ls
+README.md  about.txt
+
+Clara@Clara MINGW64 ~/IH-Labs/IronClara (main)
+$ echo "I have 3 cats and I love climbing" >> about.txt
+
+Clara@Clara MINGW64 ~/IH-Labs/IronClara (main)
+$ head about.txt
+I have 3 cats and I love climbing
+
+Clara@Clara MINGW64 ~/IH-Labs/IronClara (main)
+$ ^C
+
+Clara@Clara MINGW64 ~/IH-Labs/IronClara (main)
+$ git add .
+warning: LF will be replaced by CRLF in about.txt.
+The file will have its original line endings in your working directory
+
+Clara@Clara MINGW64 ~/IH-Labs/IronClara (main)
+$ git commit -m "add about me file"
+[main 4566ca1] add about me file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 about.txt
+
+Clara@Clara MINGW64 ~/IH-Labs/IronClara (main)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 317 bytes | 317.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/ClaraQuer/IronClara.git
+   17eef89..4566ca1  main -> main
+
+Clara@Clara MINGW64 ~/IH-Labs/IronClara (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Clara@Clara MINGW64 ~/IH-Labs/IronClara (main)
+$ cd ..
+
+Clara@Clara MINGW64 ~/IH-Labs
+$ ls
+IronClara/  lab-bash/  lab-git/
+
+Clara@Clara MINGW64 ~/IH-Labs
+$ git clone https://github.com/ClaraQuer/IronRomeo.git
+Cloning into 'IronRomeo'...
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 6 (delta 0), reused 6 (delta 0), pack-reused 0
+Receiving objects: 100% (6/6), done.
+
+Clara@Clara MINGW64 ~/IH-Labs
+$ ls
+IronClara/  IronRomeo/  lab-bash/  lab-git/
+
+Clara@Clara MINGW64 ~/IH-Labs
+$ cd IronRomeo/
+
+Clara@Clara MINGW64 ~/IH-Labs/IronRomeo (main)
+$ git branch
+* main
+
+Clara@Clara MINGW64 ~/IH-Labs/IronRomeo (main)
+$ git checkout -b classmate
+Switched to a new branch 'classmate'
+
+Clara@Clara MINGW64 ~/IH-Labs/IronRomeo (classmate)
+$ git branch
+* classmate
+  main
+
+Clara@Clara MINGW64 ~/IH-Labs/IronRomeo (classmate)
+$ touch Clara.txt
+
+Clara@Clara MINGW64 ~/IH-Labs/IronRomeo (classmate)
+$ echo "I enrolled Ironhack's Data Analytics bootcamp because I want to be able to expand in my field." >> Clara.txt
+
+Clara@Clara MINGW64 ~/IH-Labs/IronRomeo (classmate)
+$ head Clara.txt
+I enrolled Ironhack's Data Analytics bootcamp because I want to be able to expand in my field.
+
+Clara@Clara MINGW64 ~/IH-Labs/IronRomeo (classmate)
+$ git add .
+warning: LF will be replaced by CRLF in Clara.txt.
+The file will have its original line endings in your working directory
+
+Clara@Clara MINGW64 ~/IH-Labs/IronRomeo (classmate)
+$ git commit -m "Adding my file to Romeo's repository"
+[classmate feec92e] Adding my file to Romeo's repository
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Clara.txt
+
+Clara@Clara MINGW64 ~/IH-Labs/IronRomeo (classmate)
+$ git status
+On branch classmate
+nothing to commit, working tree clean
+
+Clara@Clara MINGW64 ~/IH-Labs/IronRomeo (classmate)
+$ git push
+fatal: The current branch classmate has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin classmate
+
+
+Clara@Clara MINGW64 ~/IH-Labs/IronRomeo (classmate)
+$ ^C
+
+Clara@Clara MINGW64 ~/IH-Labs/IronRomeo (classmate)
+$ git push --set-upstream origin classmate
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 413 bytes | 413.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'classmate' on GitHub by visiting:
+remote:      https://github.com/ClaraQuer/IronRomeo/pull/new/classmate
+remote:
+To https://github.com/ClaraQuer/IronRomeo.git
+ * [new branch]      classmate -> classmate
+branch 'classmate' set up to track 'origin/classmate'.
+
+Clara@Clara MINGW64 ~/IH-Labs/IronRomeo (classmate)
+$ git branch
+* classmate
+  main
+
+Clara@Clara MINGW64 ~/IH-Labs/IronRomeo (classmate)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Clara@Clara MINGW64 ~/IH-Labs/IronRomeo (main)
+$ ls
+README.md  about.txt
+
+Clara@Clara MINGW64 ~/IH-Labs/IronRomeo (main)
+$ git checkout classmate
+Switched to branch 'classmate'
+Your branch is up to date with 'origin/classmate'.
+
+Clara@Clara MINGW64 ~/IH-Labs/IronRomeo (classmate)
+$ ls
+Clara.txt  README.md  about.txt
+
+Clara@Clara MINGW64 ~/IH-Labs/IronRomeo (classmate)
+$ cd ..
+
+Clara@Clara MINGW64 ~/IH-Labs
+$ cd IronClara
+
+Clara@Clara MINGW64 ~/IH-Labs/IronClara (main)
+$ ls
+README.md  about.txt
+
+Clara@Clara MINGW64 ~/IH-Labs/IronClara (main)
+$ git checkout classmate
+error: pathspec 'classmate' did not match any file(s) known to git
+
+Clara@Clara MINGW64 ~/IH-Labs/IronClara (main)
+$ git branch
+* main
+
+Clara@Clara MINGW64 ~/IH-Labs/IronClara (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Clara@Clara MINGW64 ~/IH-Labs/IronClara (main)
+$ git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 4 (delta 0), reused 3 (delta 0), pack-reused 0
+Unpacking objects: 100% (4/4), 1.02 KiB | 130.00 KiB/s, done.
+From https://github.com/ClaraQuer/IronClara
+   4566ca1..3b0ba0c  main       -> origin/main
+Updating 4566ca1..3b0ba0c
+Fast-forward
+ romeo.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 romeo.txt
+
+Clara@Clara MINGW64 ~/IH-Labs/IronClara (main)
+$ ls
+README.md  about.txt  romeo.txt
+
+Clara@Clara MINGW64 ~/IH-Labs/IronClara (main)
+$ head romeo.txt
+I enrolled Ironhack's Data Analytics bootcamp because I loved problem solving and creating visualisations that provides a deeper insight of the data
